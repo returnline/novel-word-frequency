@@ -6,6 +6,15 @@ from text_processing import clean_content
 from word_frequency import count_words
 from wordcloud_generator import generate_wordcloud
 from gui import create_gui
+import logging
+
+logging.basicConfig(
+    level=logging.DEBUG,  # 日志级别
+    format='%(asctime)s - %(levelname)s - %(message)s',  # 格式
+    filename='log.log',    # 输出到文件
+    filemode='w'           # 覆盖写入
+)
+logging.info("程序启动")
 
 # 默认停用词库文件名
 DEFAULT_STOPWORDS_FILE = 'stopwords.txt'
