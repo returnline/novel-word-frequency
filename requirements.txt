@@ -1,0 +1,6 @@
+jieba==0.42.1
+requests==2.31.0
+tqdm==4.65.0
+logging==0.4.9.6
+wordcloud==1.8.1
+matplotlib==3.7.1
